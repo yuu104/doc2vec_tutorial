@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "similarity-calculation-tutorial"
+version = "0.1.0"
+description = ""
+authors = ["yuu <yusei8171@gmail.com>"]
+readme = "README.md"
+packages = [{include = "similarity_calculation_tutorial", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+mypy = "^1.0.1"
+demoji = "^1.1.0"
+neologdn = "^0.5.1"
+mecab-python3 = "^1.0.6"
+gensim = "^4.3.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
