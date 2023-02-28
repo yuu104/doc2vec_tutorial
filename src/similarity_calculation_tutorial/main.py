@@ -88,7 +88,7 @@ def delete_stop_word(words: List[str]) -> List[str]:
 if __name__ == '__main__':
   current_path = os.path.dirname(__file__)
 
-  corpus_texts_path = os.path.join(current_path, '../sports-watch/*.txt')
+  corpus_texts_path = os.path.join(current_path, '../topic-news/*.txt')
   corpus_file_paths = glob.glob(corpus_texts_path)
   corpus_file_names = list(map(lambda file_name: file_name.split('/')[len(file_name.split('/')) - 1], corpus_file_paths))
 
@@ -106,4 +106,4 @@ if __name__ == '__main__':
   model.save(os.path.join(current_path, '../models/doc2Vec.model'))
 
   # model = Doc2Vec.load(os.path.join(current_path, '../models/doc2vec.model'))
-  print(model.dv.most_similar('sports-watch-4627799.txt'))
+  # print(model.dv.most_similar('topic-news-5910462.txt'))
